@@ -1,0 +1,14 @@
+one:
+  stencil: rectangle
+  x: 100
+  y: 100
+  width: 30
+  height: 50
+  
+two:
+  stencil: circle
+  x: 200
+  y: 200
+  radius: 30
+  scaleX: 1
+  scaleY: 1

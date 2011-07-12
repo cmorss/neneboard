@@ -1,0 +1,69 @@
+<h2>
+  <%= @renderer.new_record? ? "Creating" : "Editing" %>
+  <%= @stencil.name.inspect %> for <%= @style.name.inspect %> Renderer
+</h2>
+
+<%= form_for([@stencil, @renderer]) do |f| %>
+  <% if @renderer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@renderer.errors.count, "error") %> prohibited this renderer from being saved:</h2>
+
+      <ul>
+        <% @renderer.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+
+    </div>
+  <% end %>
+
+  <textarea id='script' name='renderer[script]' rows="15" cols="100" spellcheck="false">
+    <%= @renderer.script %>
+  </textarea>
+  <br/>
+
+  <%= hidden_field(:renderer, :style_id) %>
+  <%= hidden_field(:renderer, :stencil_id) %>
+
+  <div style='position:relative;'>
+    <canvas id='test-canvas' width='450' height='300' style='border: 1px solid #EEE'></canvas>
+    <div id='background-holder' style='position:absolute;'>
+      
+    </div>
+  </div>
+  <%= button_to_function("Test", "renderAll()") %>
+
+  <div class="actions">
+    <%= f.submit('Update Renderer') %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', stencils_path %>
+
+<script type="text/javascript">
+  var render = function(ctx, attrs) {
+    ctx.save();
+    eval($d('script').val());
+    ctx.restore();
+  }
+
+  var renderAll = function() {
+    var canvas = $d('test-canvas')[0];
+    var ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width, canvas.height)
+
+    var attrs = {height: 100, width: 100};
+    ctx.save();
+    ctx.translate(0,0);
+    render(ctx, attrs)
+    ctx.restore();
+
+    var attrs = {height: 200, width: 200};
+    ctx.save();
+    ctx.translate(200,50);
+    render(ctx, attrs)
+    ctx.restore();
+  }
+
+  $(renderAll);
+</script>

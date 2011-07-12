@@ -1,0 +1,21 @@
+<h1>Listing collaborators</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collaborators.each do |collaborator| %>
+  <tr>
+    <td><%= link_to 'Show', collaborator %></td>
+    <td><%= link_to 'Edit', edit_collaborator_path(collaborator) %></td>
+    <td><%= link_to 'Destroy', collaborator, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collaborator', new_collaborator_path %>

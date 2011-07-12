@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to("Create New", new_stencil_path) %>
+
+<div id='stencils' class='admin'>
+  <% @stencils.each do |stencil| %>
+    <%= render partial: 'stencil_admin', locals: {stencil: stencil} %>
+  <% end %>
+</div>

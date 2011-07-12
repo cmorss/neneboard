@@ -1,0 +1,13 @@
+
+rectangle:
+  name: Rectangle
+  renderers: rectangle.clean, rectangle.napkin
+
+circle:
+  name: Circle
+  renderers: circle.clean, circle.napkin
+
+star:
+  name: Star
+  renderers: star.clean, star.napkin
+  

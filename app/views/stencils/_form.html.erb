@@ -1,0 +1,19 @@
+<%= form_for(@stencil) do |f| %>
+  <% if @stencil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stencil.errors.count, "error") %> prohibited this stencil from being saved:</h2>
+
+      <ul>
+      <% @stencil.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <label>Name:</label><%= text_field(:stencil, :name) %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

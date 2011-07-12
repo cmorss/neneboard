@@ -1,0 +1,35 @@
+package_assets:         off          # (on, off, always)
+embed_assets:           on          # (on, off, datauri)
+compress_assets:        off          # (on, off)
+gzip_assets:            off          # (on, off)
+template_function:      Handlebars.template #_.template  # (defaults to the built-in micro-templating)
+package_path:           assets    # (defaults to assets)
+javascript_compressor:  closure     # (yui, closure)
+#compressor_options:
+#  compilation_level: ADVANCED_OPTIMIZATIONS
+
+javascripts:
+  common:
+    - public/javascripts/vendor/*.js
+    - public/javascripts/jquery.js
+    - public/javascripts/underscore.js
+    - public/javascripts/backbone.js
+    - public/javascripts/handlebars.js
+    - public/javascripts/extensions.js
+    - public/javascripts/application.js
+    - public/javascripts/models/**/*.js
+    - public/javascripts/views/**/*.jst
+    - public/javascripts/views/**/*.js
+    - public/javascripts/controllers/**/*.js
+
+  templates:
+    - public/javascripts/views/**/*.jst
+    
+stylesheets:
+  common:
+    - public/stylesheets/vendor/reset.css
+    - public/stylesheets/ui/*.css
+  workspace:
+    - public/stylesheets/pages/workspace.css
+  empty:
+    - public/stylesheets/pages/empty.css

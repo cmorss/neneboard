@@ -1,0 +1,10 @@
+== Tests
+
+rake watchr
+spork
+
+ - edit RAILS_ROOT/.watchr to change source -> test running
+ 
+== Sass
+
+sass --watch ./public/stylesheets

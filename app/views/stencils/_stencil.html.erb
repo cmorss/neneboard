@@ -1,0 +1,19 @@
+<% instance_id = "#{dom_id(style)}_#{dom_id(stencil)}" %>
+
+<div class='stencil'>
+  <% if renderer.nil? %>
+    <div class='missing-renderer'>
+      No Renderer
+    </div>
+  <% else %>
+    <canvas id='<%= instance_id %>' width='<%= canvas_width %>' height='<%= canvas_height %>'>
+
+    </canvas>
+
+    <script type="text/javascript">
+      <%= scriptize_renderer(instance_id, instance_id, renderer) %>
+      $d('<%= instance_id %>').renderStencil('<%= instance_id %>', {});
+    </script>
+
+  <% end %>
+</div>
