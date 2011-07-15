@@ -11,7 +11,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -27,7 +26,25 @@
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="12" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tool_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/tool_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artist.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/models/artist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.18504673">
               <folding />
             </state>
           </provider>
@@ -36,16 +53,25 @@
       <file leaf-file-name="boards_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/boards_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="66" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+            <state line="16" column="31" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="artist.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/models/artist.js">
+      <file leaf-file-name="show.jst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/views/tool/show.jst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tools/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="11" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,61 +80,34 @@
       <file leaf-file-name="board.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/models/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="3" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.js">
+      <file leaf-file-name="show.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/show.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="12" column="3" selection-start="0" selection-end="286" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/views/tool/show.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jst" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.jst">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/views/stencils/index.jst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extensions.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/extensions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="boards_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/boards_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="assets.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/assets.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,32 +127,32 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/underscore.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/backbone.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/models/artist.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/controllers/artists_controller.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/views/boards/new.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/handlebars.1.0.beta3.js" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/tool/tool.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tool_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/tools_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/views/stencils/index.jst" />
         <option value="$PROJECT_DIR$/public/javascripts/views/stencils/_stencil.jst" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/public/javascripts/views/tool/tool.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/tools/show.html.erb" />
         <option value="$PROJECT_DIR$/config/assets.yml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/boards_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/controllers/boards_controller.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/models/board.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/views/boards/index.jst" />
-        <option value="$PROJECT_DIR$/public/javascripts/views/boards/index.js" />
         <option value="$PROJECT_DIR$/public/javascripts/extensions.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/boards/index.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/boards/index.jst" />
+        <option value="$PROJECT_DIR$/app/controllers/boards_controller.rb" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/boards/show.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/boards/show.jst" />
+        <option value="$PROJECT_DIR$/public/javascripts/models/board.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/tool.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/_menu_item.jst" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/tool.jst" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/_menu.jst" />
+        <option value="$PROJECT_DIR$/app/views/tools/show.html.erb" />
+        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/boards_controller.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/tool.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/show.jst" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/tool/show.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/tool_controller.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/models/artist.js" />
       </list>
     </option>
   </component>
@@ -185,6 +184,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,20 +200,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="neneboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whiteboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neneboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,6 +280,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stencils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,38 +367,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whiteboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neneboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whiteboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neneboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,28 +410,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whiteboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neneboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -495,11 +431,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -770,6 +706,8 @@
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -792,7 +730,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="434" y="30" width="1326" height="1166" extended-state="0" />
+    <frame x="567" y="27" width="1326" height="1166" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -801,7 +739,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45586896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24726135" sideWeight="0.54413104" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586855" sideWeight="0.54413104" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24385805" sideWeight="0.99686766" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -817,6 +755,15 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -828,6 +775,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -847,105 +795,98 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/stencils/_stencil.jst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="2" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="913" column="0" selection-start="30382" selection-end="30382" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="414" column="65" selection-start="15377" selection-end="15377" vertical-scroll-proportion="-21.038462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/assets.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/extensions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="75" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/new.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stencils_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+        <state line="13" column="3" selection-start="0" selection-end="317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tools_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.jst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/show.jst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+        <state line="1" column="2" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backbone.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
+        <state line="10" column="350" selection-start="3105" selection-end="3105" vertical-scroll-proportion="0.20813623">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/boards_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/stencils/index.jst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/stencils/_stencil.jst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/handlebars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="913" column="0" selection-start="30382" selection-end="30382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+        <state line="6" column="20" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/backbone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1115" column="10" selection-start="41144" selection-end="41153" vertical-scroll-proportion="0.0">
+        <state line="336" column="0" selection-start="11822" selection-end="11882" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/underscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="414" column="65" selection-start="15377" selection-end="15377" vertical-scroll-proportion="-21.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/tool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/tool/tool.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/tools_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -954,77 +895,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tools/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+        <state line="10" column="11" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="0" selection-end="286" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/stencils/index.jst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/tool/show.jst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/tool/show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/boards_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/models/artist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/assets.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+        <state line="12" column="16" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/boards_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="66" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+        <state line="16" column="31" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/tool_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/models/board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.jst">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/models/artist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/boards/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/extensions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.18504673">
           <folding />
         </state>
       </provider>

@@ -1,14 +1,13 @@
 App.Views.Boards = App.Views.Boards || {}
 
-App.Views.Boards.Index = Backbone.View.extend({
+App.Views.Boards.Show= Backbone.View.extend({
 
     initialize: function() {
-        this.boards = this.options.boards;
         this.render();
     },
 
     render: function() {
-        $(this.el).html(JST['boards/index'](this));
+        $(this.el).html(JST['boards/show']({board: this.model}));
         $('#tool').append(this.el);
     }
 });

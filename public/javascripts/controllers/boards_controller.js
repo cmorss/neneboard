@@ -22,9 +22,9 @@ App.Controllers.Boards = Backbone.Router.extend({
     },
 
     showBoard: function(id) {
-      var board = new Board({ id: id });
+      var board = new App.Models.Board({ id: id });
       board.fetch({
-          success: function(model, resp) {
+          success: function(board, resp) {
               new App.Views.Boards.Show({ model: board});
           },
           error: function() {
@@ -37,7 +37,10 @@ App.Controllers.Boards = Backbone.Router.extend({
     index: function() {
         $.getJSON('/boards', function(data) {
             if(data) {
-                var boards = _(data).map(function(i) { return new App.Models.Board(i); });
+                var boards = _(data).map(function(i) {
+                  var board = new App.Models.Board(i.board);
+                  return board;
+                 });
                 new App.Views.Boards.Index({ boards: boards });
             } else {
                 new Error({ message: "Error loading boards." });

@@ -3,10 +3,10 @@ db/*.sqlite3
 log/*.log
 tmp/
 
-public/stylesheets/.sass-cache/d360bd39e64861c43cf11f1d9bf195dc48564e6c/app.scssc
+public/stylesheets/.sass-cache/
 
 public/stylesheets/.DS_Store
 
-.sass-cache/d360bd39e64861c43cf11f1d9bf195dc48564e6c/app.scssc
+.sass-cache/
 
 .DS_Store
