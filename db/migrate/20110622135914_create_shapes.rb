@@ -2,7 +2,7 @@ class CreateShapes < ActiveRecord::Migration
   def self.up
     create_table :shapes, :force => true do |t|
       t.references :stencil
-
+      t.references :board
       t.integer :x
       t.integer :y
       t.integer :height

@@ -6,33 +6,33 @@ describe Stencil do
    
   end
 
-  it "should find a specific style" do
-    whiteboard = Style.create!(name: 'whiteboard')
-    chalkboard = Style.create!(name: 'chalkboard')
+  it "should find a specific theme" do
+    whiteboard = Theme.create!(name: 'whiteboard')
+    chalkboard = Theme.create!(name: 'chalkboard')
 
     stencil = Stencil.create!
     stencil.renderers = [
-      Renderer.create!(stencil: stencil, style: whiteboard),
-      Renderer.create!(stencil: stencil, style: chalkboard)
+      Renderer.create!(stencil: stencil, theme: whiteboard),
+      Renderer.create!(stencil: stencil, theme: chalkboard)
     ]
  
     stencil.renderer_for(whiteboard).should be
-    stencil.renderer_for(whiteboard).style.should == whiteboard
-    stencil.renderer_for(chalkboard).style.should == chalkboard
+    stencil.renderer_for(whiteboard).theme.should == whiteboard
+    stencil.renderer_for(chalkboard).theme.should == chalkboard
   end
 
   it "should default to whiteboard when not found" do
-    whiteboard = Style.new(name: 'whiteboard')
-    chalkboard = Style.new(name: 'chalkboard')
+    whiteboard = Theme.new(name: 'whiteboard')
+    chalkboard = Theme.new(name: 'chalkboard')
 
     stencil = Stencil.new
     stencil.renderers = [
-      Renderer.new(stencil: stencil, style: whiteboard),
+      Renderer.new(stencil: stencil, theme: whiteboard),
     ]
 
     stencil.renderer_for(whiteboard).should be
-    stencil.renderer_for(whiteboard).style.should == whiteboard
-    stencil.renderer_for(chalkboard).style.should == whiteboard
+    stencil.renderer_for(whiteboard).theme.should == whiteboard
+    stencil.renderer_for(chalkboard).theme.should == whiteboard
   end
 
 end

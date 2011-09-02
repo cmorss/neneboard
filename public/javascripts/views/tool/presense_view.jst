@@ -1,0 +1,15 @@
+<div id='logo'>NeneBoard</div>
+
+<div id='user'>
+  {{#if artist}}
+    <span id='artist-email'>{{artist/attributes/email}}</span>
+    <ul style='display:none' id='user-actions'>
+      <li><a id='account_info'>Account Info</a></li>
+      <li><a id='logout'>Log out</a></li>
+    </ul>
+  {{else}}
+    <span><a id='login'>Sign in</a> | <a id='create_account'>Create account</a></span>
+  {{/if}}
+</div>
+
+<div style='clear:both'></div>

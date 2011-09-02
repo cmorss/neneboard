@@ -2,7 +2,7 @@ class CreateRenderers < ActiveRecord::Migration
   def self.up
     create_table :renderers do |t|
       t.references :stencil, null: false
-      t.references :style, null: false
+      t.references :theme, null: false
       t.text :script, null: false
 
       t.timestamps

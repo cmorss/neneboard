@@ -2,20 +2,20 @@
 
 rectangle.clean:
   stencil: rectangle
-  style: clean
+  theme: clean
   script: "ctx.rect(x,y,width,height);"
 
 rectangle.napkin:
   stencil: rectangle
-  style: napkin
+  theme: napkin
   script: "ctx.rect(x,y,width,height);"
 
 circle.clean:
   stencil: circle
-  style: clean
+  theme: clean
   script: "ctx.circle(x,y,radius);"
 
 circle.napkin:
   stencil: circle
-  style: napkin
+  theme: napkin
   script: "ctx.circle(x,y,radius);ctx.circle(x + 2, y + 2,radius);"

@@ -3,14 +3,14 @@ require "spec_helper"
 describe "stencils/_stencil_admin.html.erb" do
 
   let(:whiteboard) do
-    mock_model('Style', name: 'whiteboard')
+    mock_model('Theme', name: 'whiteboard')
   end
   
   let(:napkin) do
-    mock_model('Style', name: 'napkin')
+    mock_model('Theme', name: 'napkin')
   end
 
-  let(:styles) do
+  let(:themes) do
 
   end
   
@@ -18,16 +18,16 @@ describe "stencils/_stencil_admin.html.erb" do
 
     stencil = mock('Stencil')
     stencil.stub!(:name, 'rectangle')
-    stencil.stub!(:renderer_for) do |style|
-      if style.name == 'whiteboard'
+    stencil.stub!(:renderer_for) do |theme|
+      if theme.name == 'whiteboard'
         mock_model('Renderer',
                     id: 1,
-                    style: whiteboard,
+                    theme: whiteboard,
                     script: 'ctx.fillRect(0,0,100,100);')
       else
         mock_model('Renderer',
                     id: 2,
-                    style: napkin,
+                    theme: napkin,
                     script: 'ctx.fillRect(10,10,90,90);')
       end
     end
@@ -42,10 +42,10 @@ describe "stencils/_stencil_admin.html.erb" do
 
     context "and no stencil are present" do
       before do
-        assign :styles, [whiteboard, napkin]
+        assign :themes, [whiteboard, napkin]
         render partial: '/stencils/stencil_admin',
                layout:  false,
-               locals:  {stencil: rectangle, style: whiteboard}
+               locals:  {stencil: rectangle, theme: whiteboard}
       end
  
       it "has a canvas" do 

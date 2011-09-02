@@ -10,8 +10,11 @@ javascript_compressor:  closure     # (yui, closure)
 
 javascripts:
   common:
-    - public/javascripts/vendor/*.js
     - public/javascripts/jquery.js
+    - public/javascripts/jquery-ui.min.js
+    - public/javascripts/ui.layout.min.js
+    - public/javascripts/jquery.ui.selectmenu.js
+    - public/javascripts/jquery.peek.js
     - public/javascripts/underscore.js
     - public/javascripts/backbone.js
     - public/javascripts/handlebars.js
@@ -21,15 +24,11 @@ javascripts:
     - public/javascripts/views/**/*.jst
     - public/javascripts/views/**/*.js
     - public/javascripts/controllers/**/*.js
+    - public/javascripts/lib/**/*.js
 
   templates:
     - public/javascripts/views/**/*.jst
     
 stylesheets:
   common:
-    - public/stylesheets/vendor/reset.css
-    - public/stylesheets/ui/*.css
-  workspace:
-    - public/stylesheets/pages/workspace.css
-  empty:
-    - public/stylesheets/pages/empty.css
+    - public/stylesheets/*.css

@@ -15,7 +15,7 @@ Neneboard::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  resource :artists do
+  resources :artists do
     resources :boards
   end
 
@@ -25,7 +25,10 @@ Neneboard::Application.routes.draw do
     resources :renderers
   end
 
-  resource :tool
+  resource :tool do
+      get 'show', :on => :member
+      get 'load', :on => :collection
+  end
     
   # Sample resource route with options:
   #   resources :products do

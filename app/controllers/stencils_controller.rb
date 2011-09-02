@@ -1,7 +1,9 @@
 class StencilsController < ApplicationController
   def index
     @stencils = Stencil.all
-    @styles = Style.all
+    @themes = Theme.all
+
+    render :json => {stencils: @stencils, themes: @themes}
   end
 
   def new

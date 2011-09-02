@@ -1,7 +1,7 @@
 class RenderersController < ApplicationController
 
   before_filter :find_stencil, :only => [:edit, :new]
-  before_filter :find_style, :only => [:edit, :new]
+  before_filter :find_theme, :only => [:edit, :new]
 
   # GET /renderers/1
   # GET /renderers/1.xml
@@ -17,7 +17,7 @@ class RenderersController < ApplicationController
   # GET /renderers/new
   # GET /renderers/new.xml
   def new
-    @renderer = Renderer.new(stencil: @stencil, style: @style)
+    @renderer = Renderer.new(stencil: @stencil, theme: @theme)
 
     respond_to do |format|
       format.html { render :template => '/renderers/edit' }
@@ -28,16 +28,16 @@ class RenderersController < ApplicationController
   # GET /renderers/1/edit
   def edit
     @renderer = Renderer.find(params[:id])
-    if @renderer.style_id != @style.id
-      @renderer = Renderer.new(style: @style, stencil: @stencil, script: @renderer.script)
+    if @renderer.theme_id != @theme.id
+      @renderer = Renderer.new(theme: @theme, stencil: @stencil, script: @renderer.script)
     end
   end
 
   # before_filter:
-  def find_style
-    @style = Style.find(params[:style_id])
+  def find_theme
+    @theme = Theme.find(params[:theme_id])
   end
-  private :find_style
+  private :find_theme
 
   # before_filter:
   def find_stencil

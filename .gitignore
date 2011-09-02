@@ -6,6 +6,7 @@ tmp/
 public/stylesheets/.sass-cache/
 
 public/stylesheets/.DS_Store
+public/javascripts/lib/
 
 .sass-cache/
 

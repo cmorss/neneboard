@@ -1,6 +1,6 @@
 <h2>
   <%= @renderer.new_record? ? "Creating" : "Editing" %>
-  <%= @stencil.name.inspect %> for <%= @style.name.inspect %> Renderer
+  <%= @stencil.name.inspect %> for <%= @theme.name.inspect %> Renderer
 </h2>
 
 <%= form_for([@stencil, @renderer]) do |f| %>
@@ -22,7 +22,7 @@
   </textarea>
   <br/>
 
-  <%= hidden_field(:renderer, :style_id) %>
+  <%= hidden_field(:renderer, :theme_id) %>
   <%= hidden_field(:renderer, :stencil_id) %>
 
   <div style='position:relative;'>

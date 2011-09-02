@@ -1,27 +1,38 @@
+a img {
+  border: none; }
+
+a,
+a:active,
+a:focus {
+  outline: none; }
+
+ul, ol {
+  margin: 0; }
+
+ul {
+  list-style-type: none; }
+
+ol {
+  list-style-type: none; }
+
 body {
-  background-color: #fff;
-  color: #333; }
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 24px; }
+  margin: 0;
+  padding: 0; }
 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px; }
 
-a {
-  color: #000; }
-
-a:visited {
-  color: #666; }
-
-a:hover {
-  color: #fff;
-  background-color: #000; }
-
+/*a { color: #000; }*/
+/*a:visited { color: #666; }*/
+/*a:hover { color: #fff; background-color:#000; }*/
 div.field, div.actions {
   margin-bottom: 10px; }
 
@@ -68,3 +79,86 @@ div.field, div.actions {
 textarea#script {
   font-size: 16px;
   font-family: Andale Mono, monospace; }
+
+.ui-dialog.large-tool {
+  -webkit-box-shadow: 0 0 0 white;
+  -moz-box-shadow: 0 0 0 white; }
+  .ui-dialog.large-tool .ui-dialog-titlebar {
+    padding: 0.3em 0.8em 0.2em; }
+  .ui-dialog.large-tool .ui-dialog-titlebar-close {
+    display: none; }
+
+ul.ui-selectmenu-menu {
+  font-size: 14px; }
+
+body {
+  background-color: #f5f5f5; }
+  body > div {
+    /*position:absolute;*/ }
+  body div#upper {
+    border-bottom: 1px solid #ccc; }
+    body div#upper #presense {
+      color: white;
+      background-image: url(/images/backgrounds/random_grey_variations.png);
+      height: 42px; }
+      body div#upper #presense #logo {
+        float: left;
+        text-indent: -100em;
+        overflow: hidden;
+        height: 42px;
+        width: 200px;
+        text-decoration: none;
+        background-image: url(/images/logos/small_text_logo.png); }
+      body div#upper #presense #user {
+        position: relative;
+        cursor: pointer;
+        margin: 11px 22px;
+        font-size: 14px;
+        float: right; }
+        body div#upper #presense #user ul {
+          margin-top: 4px;
+          padding: 4px;
+          background-color: #f5f5f5;
+          color: #333333;
+          border: 1px solid #DDD;
+          z-index: 100;
+          width: 100%;
+          position: absolute; }
+          body div#upper #presense #user ul li {
+            padding: 4px; }
+            body div#upper #presense #user ul li a:hover {
+              text-decoration: underline; }
+    body div#upper #stencils {
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      overflow-y: hidden; }
+      body div#upper #stencils #stencils-container {
+        overflow: hidden; }
+        body div#upper #stencils #stencils-container .stencil {
+          float: left;
+          width: 90px;
+          height: 90px;
+          margin: 6px;
+          text-align: center; }
+          body div#upper #stencils #stencils-container .stencil canvas {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #EEE;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            behavior: url(PIE.htc); }
+  body div#tool-pallete {
+    /*float: left;*/
+    /*width: 70px;*/
+    border-right: 1px solid #ccc; }
+  body div#workspace {
+    /*float: left;*/
+    background-color: #F2F7FA; }
+  body div#board {
+    background-color: #b0c4de; }
+  body div#right-sidebar {
+    background-color: #eee; }
+    body div#right-sidebar div#properties div.ui-dialog.large-tool {
+      width: 97%; }

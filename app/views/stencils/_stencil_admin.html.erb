@@ -3,24 +3,24 @@
     <%= stencil.name %><br/>
     <%= button_to("delete", stencil_path(stencil), method: 'delete', confirm: "Really?") %>
   </div>
-  <% @styles.each do |style| %>
+  <% @themes.each do |theme| %>
     <div class='float:left;'>
-      <% renderer = stencil.renderer_for(style) %>
+      <% renderer = stencil.renderer_for(theme) %>
       
       <div style="float:left; width: 290px">
         <div>
           <% if renderer %>
-            <% label = (renderer.style_id == style.id) ? style.name : "#{style.name} (#{renderer.style.name})" %>
-            <%= link_to(label, edit_stencil_renderer_path(stencil.id, renderer, style_id: style.id)) %>
+            <% label = (renderer.theme_id == theme.id) ? theme.name : "#{theme.name} (#{renderer.theme.name})" %>
+            <%= link_to(label, edit_stencil_renderer_path(stencil.id, renderer, theme_id: theme.id)) %>
           <% else %>
-            <%= link_to(style.name, new_stencil_renderer_path(stencil.id, style_id: style.id)) %><br/>
+            <%= link_to(theme.name, new_stencil_renderer_path(stencil.id, theme_id: theme.id)) %><br/>
           <% end %>
         </div>
         
         <%= render partial: 'stencil', locals: {
                         stencil: stencil,
                         renderer: renderer, 
-                        style: style,
+                        theme: theme,
                         canvas_width: 100,
                         canvas_height: 100} %>
       </div>

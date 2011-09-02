@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110624024112) do
+ActiveRecord::Schema.define(:version => 20110726012722) do
 
   create_table "artists", :force => true do |t|
     t.string   "email"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20110624024112) do
   create_table "boards", :force => true do |t|
     t.string   "name"
     t.integer  "artist_id"
-    t.integer  "style_id"
+    t.integer  "theme_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20110624024112) do
 
   create_table "renderers", :force => true do |t|
     t.integer  "stencil_id", :null => false
-    t.integer  "style_id",   :null => false
+    t.integer  "theme_id",   :null => false
     t.text     "script",     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20110624024112) do
 
   create_table "shapes", :force => true do |t|
     t.integer  "stencil_id"
+    t.integer  "board_id"
     t.integer  "x"
     t.integer  "y"
     t.integer  "height"
@@ -54,13 +55,22 @@ ActiveRecord::Schema.define(:version => 20110624024112) do
     t.datetime "updated_at"
   end
 
+  create_table "stencil_groups", :force => true do |t|
+    t.string "label"
+  end
+
+  create_table "stencil_groups_stencils", :id => false, :force => true do |t|
+    t.integer "stencil_group_id"
+    t.integer "stencil_id"
+  end
+
   create_table "stencils", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "styles", :force => true do |t|
+  create_table "themes", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

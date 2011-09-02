@@ -1,9 +1,35 @@
-body { background-color: #fff; color: #333; }
+$select-menu-font-size: 14px;
+$main-background-color: #F5F5F5;
+$main-color: #333;
+
+a img {
+  border: none;
+}
+
+a,
+a:active,
+a:focus {
+  outline: none;
+}
+
+ul, ol      { margin: 0; }
+ul          { list-style-type: none; }
+ol          { list-style-type: none; }
+
+body {
+  color: $main-color;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   16px;
-  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  
 }
 
 pre {
@@ -12,9 +38,9 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+/*a { color: #000; }*/
+/*a:visited { color: #666; }*/
+/*a:hover { color: #fff; background-color:#000; }*/
 
 div.field, div.actions {
   margin-bottom: 10px;
@@ -72,4 +98,129 @@ div.field, div.actions {
 textarea#script {
   font-size: 16px;
   font-family: Andale Mono, monospace;
+}
+
+.ui-dialog.large-tool {
+
+  -webkit-box-shadow: 0 0 0 white;
+  -moz-box-shadow: 0 0 0 white;
+
+  .ui-dialog-titlebar {
+    padding: 0.3em 0.8em 0.2em;
+  }
+
+  // Don't show the close button
+  .ui-dialog-titlebar-close {
+     display:none;
+  }
+}
+
+ul.ui-selectmenu-menu {
+  font-size: $select-menu-font-size;
+}
+
+body {
+  background-color: $main-background-color;
+
+  &>div {
+    /*position:absolute;*/
+  }
+
+  div#upper {
+    border-bottom: 1px solid #ccc;
+
+    #presense {
+      color: white;
+      background-image: url(/images/backgrounds/random_grey_variations.png);
+      height: 42px;
+
+      #logo {
+        float: left;
+        text-indent: -100em;
+        overflow: hidden;
+        height: 42px;
+        width: 200px;
+        text-decoration: none;
+        background-image: url(/images/logos/small_text_logo.png)
+      }
+      
+      #user {
+        position: relative;
+        cursor: pointer;
+        margin: 11px 22px;
+        font-size: $select-menu-font-size;
+        float: right;
+
+        ul {
+          margin-top: 4px;
+          padding: 4px;
+          background-color: $main-background-color;
+          color: $main-color;
+          border: 1px solid #DDD;
+          z-index: 100;
+          width: 100%;
+          position: absolute;
+
+          li {
+            padding: 4px;
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    #stencils {
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      #stencils-container {
+        overflow: hidden;
+        
+        .stencil {
+          float: left;
+          width: 90px;
+          height: 90px;
+          margin: 6px;
+          text-align: center;
+
+          canvas {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #EEE;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            behavior: url(PIE.htc);
+          }
+        }
+      }
+    }
+  }
+
+  div#tool-pallete {
+    /*float: left;*/
+    /*width: 70px;*/
+    border-right: 1px solid #ccc;
+  }
+
+  div#workspace {
+    /*float: left;*/
+    background-color: #F2F7FA;
+  }
+
+  div#board {
+    background-color: #b0c4de;
+  }
+
+  div#right-sidebar {
+    background-color: #eee;
+
+    div#properties div.ui-dialog.large-tool {
+      width: 97%;
+    }
+  }
 }

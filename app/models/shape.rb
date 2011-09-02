@@ -1,6 +1,7 @@
 class Shape < ActiveRecord::Base
   belongs_to :stencil
-
+  belongs_to :board
+  
   def to_json
     hash = {}
     

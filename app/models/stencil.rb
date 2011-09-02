@@ -1,12 +1,13 @@
 class Stencil < ActiveRecord::Base
   has_many :renderers
- 
-  def renderer_for(style)
-    renderer = renderers.detect { |renderer| renderer.style_id == style.id }
+  has_and_belongs_to_many :stencil_groups
+
+  def renderer_for(theme)
+    renderer = renderers.detect { |renderer| renderer.theme_id == theme.id }
 
     # Fall back to 'whiteboard' if we can't find the one we're looking for
     unless renderer
-      renderer = renderers.detect { |renderer| renderer.style.default? }
+      renderer = renderers.detect { |renderer| renderer.theme.default? }
     end
 
     # Still nothing? Grab the first one.

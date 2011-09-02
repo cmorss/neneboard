@@ -3,7 +3,7 @@ class CreateBoards < ActiveRecord::Migration
     create_table :boards, :force => true do |t|
       t.string :name
       t.references :artist
-      t.references :style
+      t.references :theme
       t.timestamps
     end
   end

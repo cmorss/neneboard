@@ -1,13 +1,11 @@
-
-<h1>Neneboard</h1>
-
-<div id="notice"></div>
-
-<div id="tool">
+<div id="container">
 </div>
 
 <script type="text/javascript">
+  var artistId = <%= params[:artist_id] %>;
+  var boardId = <%= params[:board_id] %>;
+
   $(function() {
-      App.init();
+      App.init({boardId: boardId, artistId: artistId});
   });
 </script>
